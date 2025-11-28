@@ -1,0 +1,10 @@
+# Ignorar dependencias de Node
+/node_modules
+
+# Ignorar archivos generados por VS Code y Live Server
+/.vscode/
+.vscode/*
+!/.vscode/settings.json
+!/.vscode/tasks.json
+!/.vscode/launch.json
+!/.vscode/extensions.json
