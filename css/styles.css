@@ -1,0 +1,80 @@
+body { 
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #f8fafc; 
+}
+
+#map {
+    height: 550px;
+    width: 100%;
+    border-radius: 1rem;
+    z-index: 1;
+    cursor: crosshair;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
+}
+
+.glass-panel {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-panel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.social-btn {
+    width: 45px; 
+    height: 45px;
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    color: white;
+}
+.social-btn:hover { 
+    transform: scale(1.1) rotate(5deg); 
+}
+
+.loader { 
+    border: 3px solid #f3f3f3; 
+    border-top: 3px solid #16a34a; 
+    border-radius: 50%; 
+    width: 24px; 
+    height: 24px; 
+    animation: spin 1s linear infinite; 
+    display: none; 
+}
+@keyframes spin { 
+    0% { transform: rotate(0deg); } 
+    100% { transform: rotate(360deg); } 
+}
+
+.custom-scroll::-webkit-scrollbar { 
+    width: 5px; 
+}
+.custom-scroll::-webkit-scrollbar-track { 
+    background: #f1f1f1; 
+}
+.custom-scroll::-webkit-scrollbar-thumb { 
+    background: #cbd5e1; 
+    border-radius: 3px; 
+}
+
+/* ESTILO PARA LA PANTALLA DE LOGIN */
+#login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f8fafc; /* Fondo del body */
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
